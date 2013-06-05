@@ -1,5 +1,5 @@
 bin_PROGRAMS          = simple-mtpfs
-simple_mtpfs_CXXFLAGS = -Wall -pedantic $(FUSE_CFLAGS)
+simple_mtpfs_CXXFLAGS = -Wall -pedantic $(MTP_CFLAGS) $(FUSE_CFLAGS)
 simple_mtpfs_CPPFLAGS = -DFUSE_USE_VERSION=28
 simple_mtpfs_LDADD    = $(MTP_LIBS) $(FUSE_LIBS)
 simple_mtpfs_SOURCES  =                 \
